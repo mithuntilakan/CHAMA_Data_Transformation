@@ -5,7 +5,7 @@ library(jsonlite)
 
 #Set working directory and assign address to data file. 
 
-setwd("C:/Users/Mithun/Desktop/Git repositories/Data_Transformation_Project")
+setwd("C:/Users/Mithun/Desktop/Git repositories/CHAMA_Data_Transformation")
 
 url<-str_c(getwd(),"/data.json")
 
