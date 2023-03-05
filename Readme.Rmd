@@ -2,7 +2,7 @@
 title: "Readme"
 author: "Mithun Kondiyara Tilakan"
 date: "`r Sys.Date()`"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -17,11 +17,40 @@ Chama is a relatively new, modern company, with an IOS App and Android App. To g
 
 Assignment Some event data come as json files and need some transformation to be structured as tables. Convert the case.json file to 3 csv files, using the programming language of your choice, with the following rules:
 
-CuratedOfferOptions.csv: CurationProvider: in quotes OfferId: in quotes DealerId: in quotes UniqueOptionId: in quotes OptionId: in quotes IsMobileDealer: without quotes IsOpen: without quotes Eta: in quotes ChamaScore: without quotes ProductBrand: in quotes IsWinner: without quotes MinimumPrice: without quotes MaximumPrice: without quotes DynamicPrice: without quotes FinalPrice: without quotes DefeatPrimaryReason: in quotes DefeatReasons: in quotes EnqueuedTimeSP: DD/MM/YYYY (converted to Brasilian timezone - UTC-3)
+CuratedOfferOptions.csv: 
+CurationProvider: in quotes 
+OfferId: in quotes 
+DealerId: in quotes 
+UniqueOptionId: in quotes 
+OptionId: in quotes 
+IsMobileDealer: without quotes 
+IsOpen: without quotes Eta: in quotes 
+ChamaScore: without quotes 
+ProductBrand: in quotes 
+IsWinner: without quotes 
+MinimumPrice: without quotes 
+MaximumPrice: without quotes 
+DynamicPrice: without quotes 
+FinalPrice: without quotes 
+DefeatPrimaryReason: in quotes 
+DefeatReasons: in quotes 
+EnqueuedTimeSP: DD/MM/YYYY (converted to Brasilian timezone - UTC-3)
 
-DynamicPriceOption.csv: Provider: in quotes OfferId: in quotes UniqueOptionId: in quotes BestPrice: without quotes EnqueuedTimeSP: DD/MM/YYYY (converted to Brasilian timezone - UTC-3)
+DynamicPriceOption.csv: 
+Provider: in quotes 
+OfferId: in quotes 
+UniqueOptionId: in quotes 
+BestPrice: without quotes 
+EnqueuedTimeSP: DD/MM/YYYY (converted to Brasilian timezone - UTC-3)
 
-DynamicPriceRange.csv: Provider: in quotes OfferId: in quotes MinGlobal: without quotes MinRecommended: without quotes MaxRecommended: without quotes DifferenceMinRecommendMinTheory: without quotes EnqueuedTimeSP: DD/MM/YYYY (converted to Brasilian timezone - UTC-3)
+DynamicPriceRange.csv: 
+Provider: in quotes 
+OfferId: in quotes 
+MinGlobal: without quotes 
+MinRecommended: without quotes 
+MaxRecommended: without quotes 
+DifferenceMinRecommendMinTheory: without quotes 
+EnqueuedTimeSP: DD/MM/YYYY (converted to Brasilian timezone - UTC-3)
 
 Data Description You are given one file data.json. Below is an example of a single record from this file:
 
