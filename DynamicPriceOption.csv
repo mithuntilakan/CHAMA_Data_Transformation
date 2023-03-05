@@ -1,8 +1,0 @@
-provider,offerId,uniqueOptionId,bestPrice,enqueued_time_utc_3
-ApplyDynamicPricePerOption,56e0702c-0218-4626-8d3d-ae9d54b4503b,<chr>,<dbl>,2021-08-18T14:43:23Z
-ApplyDynamicPricePerOption,00991873-194e-4a6e-89c9-8f68668b6aaa,<chr>,<dbl>,2021-08-18T14:44:00Z
-ApplyDynamicPricePerOption,00991873-194e-4a6e-89c9-8f68668b6aaa,<chr>,<dbl>,2021-08-18T14:44:00Z
-ApplyDynamicPricePerOption,7a471a13-7922-4e7a-9667-9b2f96b44a2a,<chr>,<dbl>,2021-08-18T14:44:04Z
-ApplyDynamicPricePerOption,7cb20a39-c7f9-4c4c-9d51-94dbb8c4ff07,<chr>,<dbl>,2021-08-18T14:43:57Z
-ApplyDynamicPricePerOption,6dc306e7-7a6a-459a-a12c-400b4b3c9d37,<chr>,<dbl>,2021-08-18T14:44:12Z
-ApplyDynamicPricePerOption,309e5beb-4e96-4f10-9233-e11057385c07,<chr>,<dbl>,2021-08-18T14:44:08Z
