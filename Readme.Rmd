@@ -165,6 +165,8 @@ DynamicPriceOption.csv<-DynamicPrice_Result.csv %>%
         filter(provider=="ApplyDynamicPricePerOption") %>% 
         select(4:6,1) %>% 
         unnest_wider(algorithmOutput) %>% 
+        unnest(uniqueOptionId) %>% 
+        unnest(bestPrice) %>% 
         rename(enqueued_time_utc_3="enqueued_time_utc")
 
 DynamicPriceOption.csv
