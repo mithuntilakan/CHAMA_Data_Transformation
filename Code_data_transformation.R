@@ -45,13 +45,13 @@ CuratedOfferOptions.csv<-CurateOffer_Result %>%
         select(4:20,1) %>% 
         rename(enqueued_time_utc_3="enqueued_time_utc")
 
-CuratedOfferOptions.csv
+CuratedOfferOptions.csv %>% View()
 
 DynamicPrice_Result.csv<-DynamicPrice_Result %>% 
         mutate(extract=lapply(payload,fromJSON)) %>% 
         unnest_wider(extract) 
 
-DynamicPrice_Result.csv
+DynamicPrice_Result.csv %>% View()
 
 DynamicPrice_Result.csv %>% count(provider,sort=T)
 
@@ -61,15 +61,17 @@ DynamicPriceRange.csv<-DynamicPrice_Result.csv %>%
         unnest_wider(algorithmOutput) %>% 
         rename(enqueued_time_utc_3="enqueued_time_utc")
 
-DynamicPriceRange.csv
+DynamicPriceRange.csv %>% View()
 
 DynamicPriceOption.csv<-DynamicPrice_Result.csv %>% 
         filter(provider=="ApplyDynamicPricePerOption") %>% 
         select(4:6,1) %>% 
         unnest_wider(algorithmOutput) %>% 
+        unnest(uniqueOptionId) %>% 
+        unnest(bestPrice) %>% 
         rename(enqueued_time_utc_3="enqueued_time_utc")
 
-DynamicPriceOption.csv
+DynamicPriceOption.csv %>% View()
 
 #Save final output as csv files.
 write_csv(DynamicPriceRange.csv,"DynamicPriceRange.csv")
